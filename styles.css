@@ -1,6 +1,34 @@
 body {
     background-color: purple;
     text-align: center;
-    text-size-adjust: 70;
 }
 /* elemento: peso 1 */
+p {
+    text-decoration-color: aqua;
+    text-decoration: dotted;
+}
+
+p.textoCorpo {
+    text-decoration-color: whitesmoke;
+    text-transform: lowercase;
+    text-emphasis-color: aqua;
+}
+
+p#primeiroParagrafo {
+    text-decoration-color: aquamarine;
+    text-decoration-line: underline;
+}
+
+p#segundoParagrafo {
+    text-align: right;
+    -webkit-text-fill-color: beige;
+    text-decoration-color: blue;
+}
+
+p#terceiroParagrafo {
+    text-shadow: 0cqmax;
+    text-decoration-line: line-through;
+    text-align: justify;
+    text-emphasis-color: black;
+    text-decoration-color: blanchedalmond;
+}
