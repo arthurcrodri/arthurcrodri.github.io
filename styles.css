@@ -4,14 +4,30 @@ header {
     background: pink;
 }
 
+h1 {
+    height: auto;
+    text-align: center;
+    -webkit-text-fill-color: azure;
+    margin: 5px;
+    border-top: 5px dotted violet;
+    border-bottom: 2px solid cadetblue;
+    border-left: 1px solid seagreen;
+    border-right: 10px dotted sandybrown;
+    border-radius: 25%;
+}
+
 body {
     background-color: purple;
-    text-align: center;
+    margin: 35px;
+    border: 1px solid salmon;
 }
 
 p {
     text-decoration-color: aqua;
     text-decoration: dotted;
+    text-align: center;
+    border: 6.9px dotted darkturquoise;
+    margin: 20px;
 }
 
 /*classe - peso 10*/
@@ -19,18 +35,24 @@ p {
     text-decoration-color: whitesmoke;
     text-transform: lowercase;
     text-emphasis-color: aqua;
+    border: 5px solid greenyellow;
+    border-radius: 100%;
+    margin: 20px;
 }
 
 /*id - peso 100*/
 #primeiroParagrafo {
     text-decoration-color: aquamarine;
     text-decoration-line: underline;
+    border: 1.5px dotted beige;
+    border-radius: 50%;
 }
 
 #segundoParagrafo {
     text-align: right;
     -webkit-text-fill-color: beige;
     text-decoration-color: blue;
+    border: 2px dotted tan;
 }
 
 #terceiroParagrafo {
@@ -39,4 +61,10 @@ p {
     text-align: justify;
     text-emphasis-color: black;
     text-decoration-color: blanchedalmond;
+    border: 1px solid saddlebrown;
+}
+
+span {
+    border: 1px solid white;
+    border-radius: 75%;
 }
