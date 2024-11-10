@@ -1,19 +1,22 @@
+/*elemento - peso 1*/
 body {
     background-color: purple;
     text-align: center;
 }
-/* elemento: peso 1 */
+
 p {
     text-decoration-color: aqua;
     text-decoration: dotted;
 }
 
+/*classe - peso 10*/
 p.textoCorpo {
     text-decoration-color: whitesmoke;
     text-transform: lowercase;
     text-emphasis-color: aqua;
 }
 
+/*id - peso 100*/
 p#primeiroParagrafo {
     text-decoration-color: aquamarine;
     text-decoration-line: underline;
