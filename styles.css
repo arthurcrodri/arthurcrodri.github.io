@@ -1,79 +1,93 @@
 /*elemento - peso 1*/
 header {
-    border: 1px dotted darkred;
-    background: pink;
+  border: 1px dotted darkred;
+  background: pink;
 }
 
 h1 {
-    height: auto;
-    text-align: center;
-    -webkit-text-fill-color: azure;
-    margin: 5px;
-    border-top: 5px dotted violet;
-    border-bottom: 2px solid cadetblue;
-    border-left: 1px solid seagreen;
-    border-right: 10px dotted sandybrown;
-    border-radius: 25%;
-    display: inline;
+  height: auto;
+  text-align: center;
+  -webkit-text-fill-color: azure;
+  margin: 5px;
+  border: 10px dotted dodgerblue;
+  font-size: 55px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 100;
+  font-style: italic;
 }
 
 h2 {
-    size: 170px;
-    text-align: justify;
-    -webkit-text-fill-color: antiquewhite;
-    margin: 25px;
+  size: 170px;
+  text-align: justify;
+  -webkit-text-fill-color: antiquewhite;
+  margin: 25px;
+  font-size: 42px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
 }
 
 body {
-    background-color: purple;
-    margin: 35px;
-    border: 1px solid salmon;
+  background-color: purple;
+  margin: 35px;
+  border: 1px solid salmon;
 }
 
 p {
-    text-decoration-color: aqua;
-    text-decoration: dotted;
-    text-align: center;
-    border: 6.9px dotted darkturquoise;
-    margin: 20px;
-    display: inline;
+  color: aqua;
+  text-decoration: dotted;
+  text-align: center;
+  border: 6.9px dotted darkturquoise;
+  margin: 20px;
 }
 
 /*classe - peso 10*/
 .textoCorpo {
-    text-decoration-color: whitesmoke;
-    text-transform: lowercase;
-    text-emphasis-color: aqua;
-    border: 5px solid greenyellow;
-    border-radius: 100%;
-    margin: 20px;
+  color: whitesmoke;
+  text-transform: lowercase;
+  text-emphasis-color: aqua;
+  border: 5px dotted greenyellow;
+  border-radius: 20%;
+  margin: 20px;
+  display: inline;
 }
 
 /*id - peso 100*/
 #primeiroParagrafo {
-    text-decoration-color: aquamarine;
-    text-decoration-line: underline;
-    border: 1.5px dotted beige;
-    border-radius: 50%;
+  color: aquamarine;
+  border: 1.5px dotted beige;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 1000;
 }
 
 #segundoParagrafo {
-    text-align: right;
-    -webkit-text-fill-color: beige;
-    text-decoration-color: blue;
-    border: 2px dotted tan;
+  text-align: right;
+  color: beige;
+  border: 2px dotted tan;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100;
 }
 
 #terceiroParagrafo {
-    text-shadow: 0cqmax;
-    text-decoration-line: line-through;
-    text-align: justify;
-    text-emphasis-color: black;
-    text-decoration-color: blanchedalmond;
-    border: 1px solid saddlebrown;
+  text-shadow: 0cqmax;
+  text-decoration-line: line-through;
+  text-align: justify;
+  display: inline-block;
+  text-emphasis-color: black;
+  color: blanchedalmond;
+  border: 1px solid saddlebrown;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24.69420px;
+}
+
+a {
+    color:aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
 }
 
 span {
-    border: 1px solid white;
-    border-radius: 75%;
+  border: 1px solid white;
+  border-radius: 75%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 69px;
 }
