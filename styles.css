@@ -1,4 +1,9 @@
 /*elemento - peso 1*/
+header {
+    border: 1px dotted darkred;
+    background: pink;
+}
+
 body {
     background-color: purple;
     text-align: center;
@@ -10,25 +15,25 @@ p {
 }
 
 /*classe - peso 10*/
-p.textoCorpo {
+.textoCorpo {
     text-decoration-color: whitesmoke;
     text-transform: lowercase;
     text-emphasis-color: aqua;
 }
 
 /*id - peso 100*/
-p#primeiroParagrafo {
+#primeiroParagrafo {
     text-decoration-color: aquamarine;
     text-decoration-line: underline;
 }
 
-p#segundoParagrafo {
+#segundoParagrafo {
     text-align: right;
     -webkit-text-fill-color: beige;
     text-decoration-color: blue;
 }
 
-p#terceiroParagrafo {
+#terceiroParagrafo {
     text-shadow: 0cqmax;
     text-decoration-line: line-through;
     text-align: justify;
