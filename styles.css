@@ -14,6 +14,14 @@ h1 {
     border-left: 1px solid seagreen;
     border-right: 10px dotted sandybrown;
     border-radius: 25%;
+    display: inline;
+}
+
+h2 {
+    size: 170px;
+    text-align: justify;
+    -webkit-text-fill-color: antiquewhite;
+    margin: 25px;
 }
 
 body {
@@ -28,6 +36,7 @@ p {
     text-align: center;
     border: 6.9px dotted darkturquoise;
     margin: 20px;
+    display: inline;
 }
 
 /*classe - peso 10*/
