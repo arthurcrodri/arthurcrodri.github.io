@@ -1,93 +1,32 @@
-/*elemento - peso 1*/
-header {
-  border: 1px dotted darkred;
-  background: pink;
-}
-
-h1 {
-  height: auto;
-  text-align: center;
-  -webkit-text-fill-color: azure;
-  margin: 5px;
-  border: 10px dotted dodgerblue;
-  font-size: 55px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-h2 {
-  size: 170px;
-  text-align: justify;
-  -webkit-text-fill-color: antiquewhite;
-  margin: 25px;
-  font-size: 42px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-}
-
 body {
-  background-color: purple;
-  margin: 35px;
-  border: 1px solid salmon;
+  background: url(./assets/bg-mobile-dark.jpg) no-repeat top center/cover;
 }
 
-p {
-  color: aqua;
-  text-decoration: dotted;
+#corpoPagina {
+  border: 0.5px solid salmon;
+  width: 1280px;
+  margin: auto;
+}
+
+#perfil {
   text-align: center;
-  border: 6.9px dotted darkturquoise;
-  margin: 20px;
 }
 
-/*classe - peso 10*/
-.textoCorpo {
-  color: whitesmoke;
-  text-transform: lowercase;
-  text-emphasis-color: aqua;
-  border: 5px dotted greenyellow;
-  border-radius: 20%;
-  margin: 20px;
-  display: inline;
+#perfil img {
+  width: 225px;
+  margin: auto;
+  display: block;
 }
 
-/*id - peso 100*/
-#primeiroParagrafo {
-  color: aquamarine;
-  border: 1.5px dotted beige;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 1000;
+#perfil h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: violet;
 }
 
-#segundoParagrafo {
-  text-align: right;
-  color: beige;
-  border: 2px dotted tan;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 100;
-}
-
-#terceiroParagrafo {
-  text-shadow: 0cqmax;
-  text-decoration-line: line-through;
-  text-align: justify;
-  display: inline-block;
-  text-emphasis-color: black;
-  color: blanchedalmond;
-  border: 1px solid saddlebrown;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 24.69420px;
-}
-
-a {
-    color:aliceblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 45px;
-}
-
-span {
-  border: 1px solid white;
-  border-radius: 75%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 69px;
+#perfil h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  color: violet;
 }
