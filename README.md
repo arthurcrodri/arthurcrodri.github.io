@@ -1,3 +1,3 @@
-# rocketseat-discover-exercicios
+# arthurcrodri.github.io
 
-Repositório destinado a armazenar os exercícios que fiz durante o curso "Discover" da Rocketseat. Armazenados aqui para eventuais consultas.
+Repositório destinado a armazenar o site do perfil de Arthur C. O. Rodrigues, com informações acadêmicas, profissionais, experiências e competências.
