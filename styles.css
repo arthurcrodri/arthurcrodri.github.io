@@ -18,7 +18,7 @@ body * {
 }
 
 #corpoPagina {
-  width: 1280px;
+  width: auto;
   margin: 75px auto 0px;
 }
 /* margin: top, right/sides, bottom, (left) */
