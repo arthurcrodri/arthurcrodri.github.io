@@ -7,7 +7,6 @@
 
 body {
   background: url(./assets/bg-mobile-dark.jpg) no-repeat top center/cover;
-  width: auto;
 }
 
 body * {
@@ -19,7 +18,7 @@ body * {
 }
 
 #corpoPagina {
-  width: auto;
+  width: 1280px;
   margin: 75px auto 0px;
 }
 /* margin: top, right/sides, bottom, (left) */
