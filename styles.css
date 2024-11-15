@@ -21,11 +21,20 @@
   --button-hover-color: #9174bf;
 }
 
+#fundo {
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  position: absolute;
+  background: var(--bg-img) no-repeat center/cover;
+  transition: all 500ms;
+}
+
 body {
-  background: var(--bg-img) no-repeat top center/cover;
-  background-size: cover;
+  margin: 0;
   display: flex;
   transition: all 500ms;
+  overflow: hidden;
 }
 
 body * {
