@@ -5,9 +5,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: #b58ff2;
+  --bg-img: url(./assets/bg-mobile-dark.jpg);
+  --border-color: rgba(221, 160, 221, 0.25);
+  --button-bg-color: rgba(255, 255, 255, 0.1);
+  --button-hover-color: #5e4784;
+}
+
+.light {
+  --text-color: #2f1755;
+  --bg-img: url(./assets/bg-mobile-light.jpg);
+  --border-color: rgba(113, 15, 113, 0.25);
+  --button-bg-color: rgba(0, 0, 0, 0.1);
+  --button-hover-color: #9174bf;
+}
+
 body {
-  background: url(./assets/bg-mobile-dark.jpg) no-repeat top center/cover;
+  background: var(--bg-img) no-repeat top center/cover;
   display: flex;
+  transition: all 500ms;
 }
 
 body * {
@@ -15,7 +32,7 @@ body * {
   font-optical-sizing: auto;
   font-weight: auto;
   font-style: normal;
-  color: #b58ff2;
+  color: var(--text-color);
 }
 
 #corpoPagina {
@@ -40,7 +57,42 @@ body * {
 
 #perfil h2 {
   font-style: italic;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+}
+
+#switch {
+  position: relative;
+  width: 75px;
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 40px;
+  height: 40px;
+  background: white url(./assets/contrast-outline.svg) no-repeat center;
+  border: 7px solid white;
+  border-radius: 100%;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 75px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  background: var(--button-bg-color);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 #botoesPagina {
@@ -50,17 +102,18 @@ body * {
   margin: 0px 30px;
   gap: 25px;
   text-align: center;
+  padding: 24px 0;
 }
 
 .botao {
-  border: 1px solid rgba(221, 160, 221, 0.25);
+  border: 0.5px solid var(--border-color);
   border-radius: 35px;
   padding: 30px 0px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--button-bg-color);
   -webkit-backdrop-filter: blur(4px);
   font-size: 24px;
   font-weight: 350;
-  transition: background, 250ms;
+  transition: 250ms;
 }
 
 .botao * {
@@ -70,9 +123,37 @@ body * {
 
 /* pseudo-selector */
 .botao:hover {
-  border: 20px solid rgba (255, 255, 255, 0.75);
+  border: 2.5px solid var(--border-color);
   border-radius: 10px;
   font-weight: 500;
-  background: rgba(255, 255, 255, 0.35);
+  background: var(--button-hover-color);
   -webkit-backdrop-filter: blur(20px);
+}
+
+#socialLinks {
+  display: flex;
+  gap: 16px;
+  padding: 25px 0;
+  font-size: 40px;
+  justify-content: center;
+}
+
+#socialLinks a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: background 250ms;
+  border-radius: 100%;
+}
+
+#socialLinks a:hover {
+  background: var(--button-hover-color);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
