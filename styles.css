@@ -23,6 +23,7 @@
 
 body {
   background: var(--bg-img) no-repeat top center/cover;
+  background-size: cover;
   display: flex;
   transition: all 500ms;
 }
