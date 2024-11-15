@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +16,6 @@
     />
     <title>Arthur C. de O. Rodrigues</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js"></script>
   </head>
 
   <body>
@@ -27,6 +26,15 @@
         <h2>@arthurcrodri</h2>
       </div>
 
+      <div id="switch" onclick="toggleMode()">
+        <button>
+          
+        </button>
+        <span>
+
+        </span>
+      </div>
+
       <ul id="botoesPagina">
         <li class="botao">
           <a href="#">Acessar Portfólio</a>
@@ -35,13 +43,26 @@
         <li class="botao">
           <a href="#">Baixar Currículo</a>
         </li>
-
-        <li class="botao">
-          <a href="https://linkedin.com/in/arthurcrodri" target="_blank"
-            >Acessar LinkedIn</a
-          >
         </li>
       </ul>
+
+      <div id="socialLinks">
+        <a href="https://github.com/arthurcrodri" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://linkedin.com/in/arthurcrodri" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://youtube.com/@arthurcrodri" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://instagram.com/arthurcrodri" target="_blank"><ion-icon name="logo-instagram" href="https://instagram.com/arthurcrodri"></ion-icon></a>
+      </div>
+
+      <footer>2024. Arthur C. O. Rodrigues (<a href="mailto:arthur.sbt@yahoo.com" target="_blank">arthur.sbt@yahoo.com</a>)</footer>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
