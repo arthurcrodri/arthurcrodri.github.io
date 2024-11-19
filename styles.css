@@ -38,18 +38,139 @@ body {
 }
 
 body * {
-  font-family: "Roboto Slab", serif;
+  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: auto;
   font-style: normal;
   color: var(--text-color);
 }
 
+header {
+  width: 100%;
+  height: 100px;
+  padding: 10px 15px;
+  display: flex;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.09);
+  -webkit-backdrop-filter: blur(25px);
+}
+
+header * {
+  width: 350px;
+  font-family: "Creepster", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0px 10px;
+  padding: 0 10px;
+}
+
+#espacoCabecalho {
+  width: 100%;
+  display: block;
+  border: 1px solid pink;
+}
+
+#nomeSite {
+  font-size: 40px;
+  width: 750px;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.botaoCabecalho {
+  font-size: 20px;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms;
+  border-radius: 100%;
+}
+
+.botaoCabecalho:hover {
+  background-color: var(--button-hover-color);
+  -webkit-backdrop-filter: blur(25px);
+}
+
+#switch {
+  position: relative;
+  width: auto;
+  margin: 0;
+}
+
+#switch button {
+  width: 40px;
+  height: 40px;
+  background: white url(./assets/contrast-outline.svg) no-repeat center;
+  border: 7px solid white;
+  border-radius: 100%;
+  padding: 0;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 75px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 25px;
+  padding: 0;
+  margin: 0;
+  background: var(--button-bg-color);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+#corpo {
+  border: 1px solid blue;
+  display: flex;
+  margin: 100px 0 0;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+}
+
+#comeco {
+  height: 750px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+#textoComeco {
+  position: relative;
+  width: 75%;
+  margin: 325px auto;
+  display: block;
+}
+
+/*
 #corpoPagina {
   width: 600px;
   margin: 75px auto 0px;
 }
-/* margin: top, right/sides, bottom, (left) */
+
+margin: top, right/sides, bottom, (left)
 
 #perfil {
   text-align: center;
@@ -70,39 +191,26 @@ body * {
   margin-bottom: 0;
 }
 
-#switch {
-  position: relative;
-  width: 75px;
-  margin: 4px auto;
+#socialLinks {
+  display: flex;
+  gap: 16px;
+  padding: 25px 0;
+  font-size: 40px;
+  justify-content: center;
 }
 
-#switch button {
-  width: 40px;
-  height: 40px;
-  background: white url(./assets/contrast-outline.svg) no-repeat center;
-  border: 7px solid white;
+#socialLinks a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: background 250ms;
   border-radius: 100%;
-
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-.light #switch button {
-  right: 0;
-  left: initial;
-}
-
-#switch span {
-  display: block;
-  width: 75px;
-  height: 30px;
-  border: 1px solid var(--border-color);
-  border-radius: 25px;
-  background: var(--button-bg-color);
-  -webkit-backdrop-filter: blur(4px);
+#socialLinks a:hover {
+  background: var(--button-hover-color);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 #botoesPagina {
@@ -131,7 +239,7 @@ body * {
   text-decoration: none;
 }
 
-/* pseudo-selector */
+pseudo-selector
 .botao:hover {
   border: 2.5px solid var(--border-color);
   border-radius: 10px;
@@ -140,30 +248,4 @@ body * {
   -webkit-backdrop-filter: blur(20px);
 }
 
-#socialLinks {
-  display: flex;
-  gap: 16px;
-  padding: 25px 0;
-  font-size: 40px;
-  justify-content: center;
-}
-
-#socialLinks a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  transition: background 250ms;
-  border-radius: 100%;
-}
-
-#socialLinks a:hover {
-  background: var(--button-hover-color);
-  -webkit-backdrop-filter: blur(20px);
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+*/
