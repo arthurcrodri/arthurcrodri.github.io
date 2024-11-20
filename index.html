@@ -30,12 +30,11 @@
   <body>
     <div id="fundo"></div>
     <header>
-      <a id="nomeSite">Arthur Rodrigues</a>
+      <a href="./index.html" id="nomeSite">Arthur Rodrigues</a>
       <div id="espacoCabecalho"></div>
-      <a class="botaoCabecalho">Apresentação Pessoal</a>
-      <a class="botaoCabecalho">Trajetória Acadêmica</a>
-      <a class="botaoCabecalho">Competências e Habilidades</a>
-      <a class="botaoCabecalho">Por que a Include?</a>
+      <a href="./trajetoria-academica.html" class="botaoCabecalho">Trajetória Acadêmica</a>
+      <a href="./competencias.html" class="botaoCabecalho">Competências e Habilidades</a>
+      <a href="./por-que-include.html" class="botaoCabecalho">Por que a Include?</a>
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
@@ -47,20 +46,39 @@
         <div id="textoComeco">
           <h2>boas vindas ao site de</h2>
           <h1>Arthur Cândido de Oliveira Rodrigues</h1>
+          <a href="#sobre"><ion-icon name="chevron-down-outline"></ion-icon></a>
+        </div>
+      </div>
+
+      <div id="sobre">
+        <div id="tituloSobre">
+          <h1>Quem sou eu?</h1>
+          <img src="./assets/pfp.png" />
+        </div>
+        <div id="textoSobre">
+          <h2>Muito prazer!</h2>
+          <p>
+            Sou <b>Arthur Rodrigues</b>, aluno de
+            <b>Engenharia de Computação</b> pela UFRN (primeiro período) e
+            participante do <b>processo seletivo da Include Engenharia</b>. Este
+            site visa reunir todas as minhas <b>informações acadêmicas</b> e
+            <b>competências</b> em um site construído por mim.
+          </p>
+          <p>
+            <b>Quer conhecer mais?</b> Escolha um dos
+            <b>botões no cabeçalho</b> para começar sua jornada
+          </p>
         </div>
       </div>
     </div>
 
-    <!--
-    <div id="corpoPagina">
-      <div id="perfil">
-        <img src="./assets/pfp.png" />
-        <h1>Arthur Rodrigues</h1>
-        <h2>@arthurcrodri</h2>
-      </div>
-      <div id="socialLinks">
+    <div id="rodape">
+      <div id="socialIcons">
         <a href="https://github.com/arthurcrodri" target="_blank"
           ><ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a href="https://instagram.com/arthurcrodri" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
         ></a>
         <a href="https://linkedin.com/in/arthurcrodri" target="_blank"
           ><ion-icon name="logo-linkedin"></ion-icon
@@ -68,31 +86,11 @@
         <a href="https://youtube.com/@arthurcrodri" target="_blank"
           ><ion-icon name="logo-youtube"></ion-icon
         ></a>
-        <a href="https://instagram.com/arthurcrodri" target="_blank"
-          ><ion-icon
-            name="logo-instagram"
-            href="https://instagram.com/arthurcrodri"
-          ></ion-icon
+        <a href="mailto:arthur.sbt@yahoo.com"
+          ><ion-icon name="mail-outline"></ion-icon
         ></a>
       </div>
-
-      <ul id="botoesPagina">
-        <li class="botao">
-          <a href="#">Apresentação</a>
-        </li>
-
-        <li class="botao">
-          <a href="#">Carreira Acadêmica</a>
-        </li>
-
-        <li class="botao">
-          <a href="#">Experiências & Competências</a>
-        </li>
-
-        <li class="botao">
-          <a href="#">Por queê entrar na Include?</a>
-        </li>
-      </ul>
-    -->
+      <footer>Criado por Arthur Cândido de Oliveira Rodrigues - 2024</footer>
+    </div>
   </body>
 </html>
