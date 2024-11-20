@@ -3,14 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1 {
 }
 
 :root {
   --text-color: #b58ff2;
+  --header-color: rgb(255, 157, 0);
   --bg-img: url(./assets/bg-mobile-dark.jpg);
   --border-color: rgba(221, 160, 221, 0.25);
   --button-bg-color: rgba(255, 255, 255, 0.1);
-  --button-hover-color: #5e4784;
+  --button-hover-color: rgba(94, 71, 132, 0.5);
+  --header-background: rgba(0, 0, 0, 0.5);
 }
 
 .light {
@@ -18,23 +24,27 @@
   --bg-img: url(./assets/bg-mobile-light.jpg);
   --border-color: rgba(113, 15, 113, 0.25);
   --button-bg-color: rgba(0, 0, 0, 0.1);
-  --button-hover-color: #9174bf;
+  --button-hover-color: rgba(145, 116, 191, 0.5);
+  --header-background: rgba(255, 255, 255, 0.5);
+  --header-color: rgb(199, 85, 19);
 }
 
 #fundo {
   width: 100%;
   height: 100%;
-  z-index: -999;
-  position: absolute;
+  z-index: -2;
+  position: fixed;
+  top: 0;
   background: var(--bg-img) no-repeat center/cover;
   transition: all 500ms;
+  scroll-behavior: initial;
 }
 
 body {
   margin: 0;
   display: flex;
   transition: all 500ms;
-  overflow: hidden;
+  overflow: auto;
 }
 
 body * {
@@ -50,14 +60,17 @@ header {
   height: 100px;
   padding: 10px 15px;
   display: flex;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.09);
-  -webkit-backdrop-filter: blur(25px);
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: var(--header-background);
+  -webkit-backdrop-filter: blur(100px);
 }
 
 header * {
   width: 350px;
   font-family: "Creepster", sans-serif;
+  color: var(--header-color);
   position: relative;
   display: flex;
   justify-content: center;
@@ -92,7 +105,7 @@ header * {
   justify-content: center;
   align-items: center;
   transition: all 250ms;
-  border-radius: 100%;
+  border-radius: 30px;
 }
 
 .botaoCabecalho:hover {
@@ -139,7 +152,6 @@ header * {
 }
 
 #corpo {
-  border: 1px solid blue;
   display: flex;
   margin: 100px 0 0;
   width: 100%;
@@ -163,6 +175,98 @@ header * {
   display: block;
 }
 
+#textoComeco * {
+  color: var(--header-color);
+}
+
+#textoComeco a {
+  font-size: 40px;
+}
+
+#sobre {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 750px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 750px 0 0;
+}
+
+#sobre * {
+  padding: 15px;
+  -webkit-backdrop-filter: blur(30px);
+}
+
+#tituloSobre {
+  width: 100%;
+  justify-content: right;
+}
+
+#tituloSobre h1 {
+  font-family: "Creepster", sans-serif;
+  font-size: 75px;
+  color: var(--header-color);
+}
+
+#tituloSobre img {
+  width: 350px;
+  margin: auto;
+}
+
+#textoSobre h2 {
+  text-align: left;
+  justify-content: left;
+  align-self: left;
+  font-size: 30px;
+  padding: 0 0 5px;
+}
+
+#textoSobre p {
+  padding: 20px 0;
+  width: 75%;
+  text-align: left;
+  font-size: 20px;
+}
+
+#textoSobre * {
+  margin: 0;
+  padding: 0;
+}
+
+#rodape {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 1610px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+}
+
+#socialIcons {
+  display: block;
+  text-align: right;
+  width: 50%;
+  padding: 0 20px;
+  font-size: 25px;
+}
+
+#socialIcons * {
+  color: #b58ff2;
+  margin: 5px;
+}
+
+footer {
+  width: 50%;
+  display: block;
+  text-align: left;
+  color: #b58ff2;
+}
+
 /*
 #corpoPagina {
   width: 600px;
@@ -176,10 +280,6 @@ margin: top, right/sides, bottom, (left)
   padding: 24px;
 }
 
-#perfil img {
-  width: 225px;
-  margin: auto;
-}
 
 #perfil h1 {
   margin-top: 10px;
