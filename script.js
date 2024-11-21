@@ -80,17 +80,60 @@ function revelationsIndex() {
 }
 
 function revelationsTrajetoria() {
-
+  ScrollReveal().reveal(".item", {
+    delay: 150,
+    origin: "bottom",
+    distance: "50px",
+    easing: "ease-out",
+    duration: 500,
+  })
 }
 
 function revelationsCompetencias() {
-
+  ScrollReveal().reveal("#python", {
+    delay: 50,
+    origin: "left",
+    distance: "50px",
+    easing: "ease-out",
+    duration: 500,
+  })
+  ScrollReveal().reveal("#html", {
+    delay: 150,
+    origin: "left",
+    distance: "50px",
+    easing: "ease-out",
+    duration: 500,
+  })
+  ScrollReveal().reveal("#css", {
+    delay: 250,
+    origin: "left",
+    distance: "50px",
+    easing: "ease-out",
+    duration: 500,
+  })
+  ScrollReveal().reveal("#github", {
+    delay: 50,
+    origin: "right",
+    distance: "50px",
+    easing: "ease-out",
+    duration: 500,
+  })
+  ScrollReveal().reveal("#office", {
+    delay: 150,
+    origin: "right",
+    distance: "50px",
+    easing: "ease-out",
+    duration: 500,
+  })
+  ScrollReveal().reveal("#lider", {
+    delay: 250,
+    origin: "right",
+    distance: "50px",
+    easing: "ease-out",
+    duration: 500,
+  })
 }
 
-function revelationsInclude() {
+function revelationsInclude() {}
 
-}
-
-function revelationsContato() {
-  
-}
+function revelationsContato() {}
