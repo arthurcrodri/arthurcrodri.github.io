@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Arthur C. de O. Rodrigues</title>
+    <title>Trajetória Acadêmica | Arthur C. de O. Rodrigues</title>
     <link rel="stylesheet" href="./styles.css" />
     <script
       type="module"
@@ -24,13 +24,17 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./script.js"></script>
   </head>
 
-  <body onload="loadPreviousMode()">
+  <body onload="loadPreviousMode(), revelationsTrajetoria()">
     <div id="fundo"></div>
     <header>
-      <a href="./index.html" id="nomeSite">Arthur Rodrigues</a>
+      <a href="./index.html" id="nomeSite"
+        ><div id="jackIcon"></div>
+        Arthur Rodrigues</a
+      >
       <div id="espacoCabecalho"></div>
       <a href="./trajetoria-academica.html" class="botaoCabecalho"
         >Trajetória Acadêmica</a
@@ -41,6 +45,7 @@
       <a href="./por-que-include.html" class="botaoCabecalho"
         >Por que a Include?</a
       >
+      <a href="./contato.html" class="botaoCabecalho">Entre em Contato</a>
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
@@ -48,12 +53,95 @@
     </header>
 
     <div id="corpo">
-      <div id="comeco">
-        <div id="textoComeco">
-          <h2>página em</h2>
-          <h1>Construção</h1>
-          <a href="./index.html">voltar ao início</a>
+      <div id="tituloTraj">
+        <h1>Trajetória Acadêmica e Profissional</h1>
+      </div>
+      <div id="timeline">
+        <!-- inicio timeline -->
+        <div class="itemEsq">
+          <div class="conteudoEsq">
+            <h2>2017</h2>
+            <ul>
+              <li>
+                Participa, pela primeira vez, da OBMEP, recebendo uma Menção
+                Honrosa.
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="itemDir">
+          <div class="conteudoDir">
+            <h2>2018</h2>
+            <ul>
+              <li>
+                Entra no programa Desenvolvendo Talentos do
+                <a href="https://irs.org.br/" target="_blank"
+                  >Instituto Rogerio Steinberg (IRS)</a
+                >, focado em identificar e desenvolver alunos de baixa renda
+                matriculados em escolas públicas do Rio de Janeiro com altas
+                hablidades. Tem os primeiros contatos com robótica e programação
+                com Lego NXT, pesquisa, escrita e estruturação de artigo
+                científico e empreendedorismo.
+              </li>
+              <li>
+                Participa, pela primeira vez, como Bolsista do Programa de
+                Iniciação Científica Júnior (PIC-Jr) da OBMEP, no nível 1.
+              </li>
+              <li>Participa novamente da OBMEP, sendo Medalhista de Prata.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="itemEsq">
+          <div class="conteudoEsq">
+            <h2>2019</h2>
+            <ul>
+              <li>
+                Primeiro contato com programação e montagem de circuitos e
+                protótipos usando Arduino no IRS.
+              </li>
+              <li>
+                Participação na Olimpíada Brasileira de Robótica (OBR)
+                representando o IRS, chegando à etapa estadual em Petrópolis-RJ.
+              </li>
+              <li>
+                É bolsista, novamente, do PIC-Jr da OBMEP, participando dos
+                ciclos do Nível 2.
+              </li>
+              <li>
+                Participa novamente da OBMEP, desta vez no nível 2, e recebe
+                Medalha de Bronze.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="itemDir">
+          <div class="conteudoDir">
+            <h2>2020</h2>
+            <ul>
+              <li>
+                Ingressa como aluno bolsista na Escola Americana do Rio de
+                Janeiro (EARJ).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="itemEsq">
+          <div class="conteudoEsq">
+            <h2>2021</h2>
+            <ul>
+              <li>
+                Entra na equipe de elaboração do Anuário da EARJ, sendo esse o
+                primeiro contato com uma metodologia de princípios alinhados ao
+                SCRUM.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- fim timeline -->
       </div>
     </div>
 
