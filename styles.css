@@ -450,6 +450,64 @@ header * {
   font-size: 18px;
 }
 
+/* por-que-include.html */
+
+/* contato.html */
+
+#tituloCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#tituloCont h1 {
+  color: var(--header-color);
+  font-family: "Creepster", sans-serif;
+  font-size: 75px;
+}
+
+#form {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  padding: 25px 0;
+}
+
+#comentario {
+  height: 100%;
+  width: 100%;
+}
+
+#botaoEnvio {
+  font-size: 20px;
+  font-family: "Creepster", sans-serif;
+  color: var(--header-color);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms;
+  border-radius: 30px;
+}
+
+#botaoEnvio:hover {
+  background-color: var(--button-hover-color);
+  -webkit-backdrop-filter: blur(25px);
+}
+
 /* footer */
 
 #rodape {
