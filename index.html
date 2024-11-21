@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Arthur C. de O. Rodrigues</title>
+    <title>Início | Arthur C. de O. Rodrigues</title>
     <link rel="stylesheet" href="./styles.css" />
     <script
       type="module"
@@ -24,13 +24,17 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./script.js"></script>
   </head>
 
-  <body onload="loadPreviousMode()">
+  <body onload="loadPreviousMode(), revelationsIndex()">
     <div id="fundo"></div>
     <header>
-      <a href="./index.html" id="nomeSite">Arthur Rodrigues</a>
+      <a href="./index.html" id="nomeSite"
+        ><div id="jackIcon"></div>
+        Arthur Rodrigues</a
+      >
       <div id="espacoCabecalho"></div>
       <a href="./trajetoria-academica.html" class="botaoCabecalho"
         >Trajetória Acadêmica</a
@@ -41,6 +45,7 @@
       <a href="./por-que-include.html" class="botaoCabecalho"
         >Por que a Include?</a
       >
+      <a href="./contato.html" class="botaoCabecalho">Entre em Contato</a>
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
@@ -63,16 +68,16 @@
         </div>
         <div id="textoSobre">
           <h2>Muito prazer!</h2>
-          <p>
+          <p id="sobre1">
             Sou <b>Arthur Rodrigues</b>, aluno de
             <b>Engenharia de Computação</b> pela UFRN (primeiro período) e
             participante do <b>processo seletivo da Include Engenharia</b>. Este
             site visa reunir todas as minhas <b>informações acadêmicas</b> e
             <b>competências</b> em um site construído por mim.
           </p>
-          <p>
+          <p id="sobre2">
             <b>Quer conhecer mais?</b> Escolha um dos
-            <b>botões no cabeçalho</b> para começar sua jornada
+            <b>botões no cabeçalho</b> para começar sua jornada.
           </p>
         </div>
       </div>
