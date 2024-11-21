@@ -137,3 +137,7 @@ function revelationsCompetencias() {
 function revelationsInclude() {}
 
 function revelationsContato() {}
+
+function sendComment() {
+  alert("Seu comentário foi enviado!");
+}
