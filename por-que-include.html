@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Arthur C. de O. Rodrigues</title>
+    <title>Por que a Include? | Arthur C. de O. Rodrigues</title>
     <link rel="stylesheet" href="./styles.css" />
     <script
       type="module"
@@ -24,17 +24,28 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./script.js"></script>
   </head>
 
-  <body onload="loadPreviousMode()">
+  <body onload="loadPreviousMode(), revelationsInclude()">
     <div id="fundo"></div>
     <header>
-      <a href="./index.html" id="nomeSite">Arthur Rodrigues</a>
+      <a href="./index.html" id="nomeSite"
+        ><div id="jackIcon"></div>
+        Arthur Rodrigues</a
+      >
       <div id="espacoCabecalho"></div>
-      <a href="./trajetoria-academica.html" class="botaoCabecalho">Trajetória Acadêmica</a>
-      <a href="./competencias.html" class="botaoCabecalho">Competências e Habilidades</a>
-      <a href="./por-que-include.html" class="botaoCabecalho">Por que a Include?</a>
+      <a href="./trajetoria-academica.html" class="botaoCabecalho"
+        >Trajetória Acadêmica</a
+      >
+      <a href="./competencias.html" class="botaoCabecalho"
+        >Competências e Habilidades</a
+      >
+      <a href="./por-que-include.html" class="botaoCabecalho"
+        >Por que a Include?</a
+      >
+      <a href="./contato.html" class="botaoCabecalho">Entre em Contato</a>
       <div id="switch" onclick="toggleMode()">
         <button></button>
         <span></span>
