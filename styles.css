@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 :root {
@@ -14,6 +15,8 @@
   --button-bg-color: rgba(255, 255, 255, 0.1);
   --button-hover-color: rgba(94, 71, 132, 0.5);
   --header-background: rgba(0, 0, 0, 0.5);
+  --jack-icon: url(./assets/jack-icon-dark.svg);
+  --jack-hover-color: rgba(255, 218, 158, 0.3);
 }
 
 .light {
@@ -24,6 +27,8 @@
   --button-hover-color: rgba(145, 116, 191, 0.5);
   --header-background: rgba(255, 255, 255, 0.5);
   --header-color: rgb(199, 85, 19);
+  --jack-hover-color: rgba(190, 113, 68, 0.3);
+  --jack-icon: url(./assets/jack-icon-light.svg);
 }
 
 #fundo {
@@ -41,7 +46,8 @@ body {
   margin: 0;
   display: flex;
   transition: all 500ms;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -83,7 +89,7 @@ header * {
 }
 
 #espacoCabecalho {
-  width: 100%;
+  width: 50%;
   display: block;
 }
 
@@ -95,6 +101,25 @@ header * {
   transform: translateY(-50%);
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+#jackIcon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 75px;
+  height: 75px;
+  background: rgba(0, 0, 0, 0) var(--jack-icon) no-repeat center/cover;
+  border: 15px solid rgba(0, 0, 0, 0);
+  border-radius: 100%;
+  transition: all 250ms;
+}
+
+#jackIcon:hover {
+  background-color: var(--jack-hover-color);
+  transition: all 250ms;
 }
 
 .botaoCabecalho {
@@ -157,6 +182,8 @@ header * {
   justify-content: center;
 }
 
+/* index.html */
+
 #comeco {
   display: block;
   width: 100%;
@@ -185,6 +212,15 @@ header * {
 
 #textoComeco * {
   color: var(--header-color);
+}
+
+#textoComeco h2 {
+  font-weight: 350;
+}
+
+#textoComeco h1 {
+  font-family: "Creepster", sans-serif;
+  font-size: 50px;
 }
 
 #textoComeco a {
@@ -243,14 +279,42 @@ header * {
   padding: 0;
 }
 
+/* trajetoria-academica.html */
+
+#tituloTraj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#tituloTraj h1 {
+  color: var(--header-color);
+  font-family: "Creepster", sans-serif;
+  font-size: 75px;
+}
+
+
+
+/* footer */
+
 #rodape {
   width: 100%;
   height: 100px;
+  bottom: 0%;
   display: flex;
-  justify-content: center;
-  text-align: center;
+  flex-direction: row;
   align-items: center;
   background-color: black;
+}
+
+#rodape * {
+  margin: 0;
+  bottom: 0px;
+  padding: 0;
 }
 
 #socialIcons {
@@ -272,85 +336,3 @@ footer {
   text-align: left;
   color: #b58ff2;
 }
-
-/*
-#corpoPagina {
-  width: 600px;
-  margin: 75px auto 0px;
-}
-
-margin: top, right/sides, bottom, (left)
-
-#perfil {
-  text-align: center;
-  padding: 24px;
-}
-
-
-#perfil h1 {
-  margin-top: 10px;
-}
-
-#perfil h2 {
-  font-style: italic;
-  margin-bottom: 0;
-}
-
-#socialLinks {
-  display: flex;
-  gap: 16px;
-  padding: 25px 0;
-  font-size: 40px;
-  justify-content: center;
-}
-
-#socialLinks a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  transition: background 250ms;
-  border-radius: 100%;
-}
-
-#socialLinks a:hover {
-  background: var(--button-hover-color);
-  -webkit-backdrop-filter: blur(20px);
-}
-
-#botoesPagina {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
-  gap: 25px;
-  text-align: center;
-  padding: 24px 0;
-}
-
-.botao {
-  border: 0.5px solid var(--border-color);
-  border-radius: 35px;
-  padding: 30px 0px;
-  background: var(--button-bg-color);
-  -webkit-backdrop-filter: blur(4px);
-  font-size: 24px;
-  font-weight: 350;
-  transition: 250ms;
-}
-
-.botao * {
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-}
-
-pseudo-selector
-.botao:hover {
-  border: 2.5px solid var(--border-color);
-  border-radius: 10px;
-  font-weight: 500;
-  background: var(--button-hover-color);
-  -webkit-backdrop-filter: blur(20px);
-}
-
-*/
