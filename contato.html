@@ -53,12 +53,19 @@
     </header>
 
     <div id="corpo">
-      <div id="comeco">
-        <div id="textoComeco">
-          <h2>página em</h2>
-          <h1>Construção</h1>
-          <a href="./index.html">voltar ao início</a>
-        </div>
+      <div id="tituloCont">
+        <h1>Entre em contato com o autor!</h1>
+      </div>
+      <div id="form">
+        <div id="caixaComentario"></div>
+        <textarea
+          name="Digite aqui seu comentário"
+          id="comentario"
+          cols="60"
+          rows="5"
+        ></textarea>
+        <br />
+        <button id="botaoEnvio" onclick="sendComment()">Enviar</button>
       </div>
     </div>
 
