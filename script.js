@@ -134,8 +134,23 @@ function revelationsCompetencias() {
   })
 }
 
-function revelationsInclude() {}
+function revelationsInclude() {
+  ScrollReveal().reveal(".bolhaExp", {
+    delay: 150,
+    origin: "bottom",
+    distance: "50px",
+    easing: "ease-out",
+    duration: 500,
+  })
+  ScrollReveal().reveal(".bolhaPq", {
+    delay: 150,
+    origin: "top",
+    distance: "50px",
+    easing: "ease-out",
+    duration: 500,
+  })
+}
 
 function sendComment() {
-  alert("Seu comentário foi enviado!");
+  alert("Seu comentário foi enviado!")
 }
