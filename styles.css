@@ -472,7 +472,7 @@ header * {
 
 #expInc {
   width: 95%;
-  height: 540px;
+  height: auto;
   margin: 20px auto;
   display: flex;
   flex-direction: row;
@@ -483,7 +483,7 @@ header * {
 
 #porque {
   width: 95%;
-  height: 600px;
+  height: auto;
   margin: 20px auto;
   display: flex;
   flex-direction: row;
@@ -494,7 +494,7 @@ header * {
 
 .bolhaExp {
   width: 500px;
-  height: 300px;
+  height: auto;
   margin: 0 25px;
   padding: 50px 25px;
   background-color: var(--header-background);
@@ -506,7 +506,7 @@ header * {
 
 .bolhaPq {
   width: 500px;
-  height: 500px;
+  height: auto;
   margin: 0 25px;
   padding: 50px 25px;
   background-color: var(--header-background);
