@@ -16,7 +16,7 @@ const Header = () => {
         let classes = "font-medium text-brand-gold hover:underline hover:font-bold";
         
         if (isActive) {
-            classes += " underline font-bold"; 
+            classes += " underline"; 
         }
         return classes;
     };

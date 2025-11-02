@@ -1,10 +1,11 @@
 import Header from "../components/header";
+import HeroSection from "../components/heroSection";
 
 const HomePage = () => {
     return (
         <>
             <Header />
-            <p className="text-center text-brand-gold">Website em desenvolvimento</p>
+            <HeroSection />
         </>
     )
 }
